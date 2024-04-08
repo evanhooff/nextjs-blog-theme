@@ -40,7 +40,7 @@ dependencies:
     version: 13.1.6(eslint@8.33.0)(typescript@5.0.4)
   framer-motion:
     specifier: ^10.15.1
-    version: 10.15.1(react-dom@18.2.0)(react@18.2.0)
+    version: 10.15.1(react-dom@18.2.0)(react@18.1.0)
   gql:
     specifier: ^1.1.2
     version: 1.1.2
@@ -64,37 +64,37 @@ dependencies:
     version: 0.3.0
   lucide-react:
     specifier: ^0.268.0
-    version: 0.268.0(react@18.2.0)
+    version: 0.268.0(react@18.1.0)
   negotiator:
     specifier: ^0.6.3
     version: 0.6.3
   next:
     specifier: 13.4.5
-    version: 13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
+    version: 13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.1.0)
   next-themes:
     specifier: ^0.2.1
-    version: 0.2.1(next@13.4.5)(react-dom@18.2.0)(react@18.2.0)
+    version: 0.2.1(next@13.4.5)(react-dom@18.2.0)(react@18.1.0)
   react:
-    specifier: 18.2.0
-    version: 18.2.0
+    specifier: ^18.0.34
+    version: 18.1.0
   react-datocms:
     specifier: ^4.1.3
-    version: 4.1.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 4.1.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.1.0)
   react-dom:
     specifier: 18.2.0
-    version: 18.2.0(react@18.2.0)
+    version: 18.2.0(react@18.1.0)
   react-i18next:
     specifier: ^13.0.3
-    version: 13.0.3(i18next@23.4.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 13.0.3(i18next@23.4.1)(react-dom@18.2.0)(react@18.1.0)
   react-markdown:
     specifier: ^8.0.7
-    version: 8.0.7(@types/react@18.0.34)(react@18.2.0)
+    version: 8.0.7(@types/react@18.0.34)(react@18.1.0)
   react-modal-video:
     specifier: ^2.0.0
-    version: 2.0.0(@babel/core@7.24.4)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.34.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.0.0(@babel/core@7.24.4)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.34.1)(react-dom@18.2.0)(react@18.1.0)
   react-syntax-highlighter:
     specifier: ^15.5.0
-    version: 15.5.0(react@18.2.0)
+    version: 15.5.0(react@18.1.0)
 
 devDependencies:
   '@graphql-codegen/cli':
@@ -4782,7 +4782,7 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: true
 
-  /framer-motion@10.15.1(react-dom@18.2.0)(react@18.2.0):
+  /framer-motion@10.15.1(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-6avJj/Uftblw0fMmo6jDHkKRH4TBdkMX/FiyR3G/hFe3hQHE4BUNJCqlMPKg9EzfI5jyqDOwO5oDnU+bW5y0eg==}
     peerDependencies:
       react: ^18.0.0
@@ -4793,8 +4793,8 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
       tslib: 2.6.2
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
@@ -6494,12 +6494,12 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /lucide-react@0.268.0(react@18.2.0):
+  /lucide-react@0.268.0(react@18.1.0):
     resolution: {integrity: sha512-XP/xY3ASJAViqNqVnDRcEfdxfRB7uNST8sqTLwZhL983ikmHMQ7qQak7ZxrnXOVhB3QDBawdr3ANq0P+iWHP/g==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: 18.2.0
+      react: 18.1.0
     dev: false
 
   /make-dir@3.1.0:
@@ -7014,19 +7014,19 @@ packages:
       type-fest: 0.4.1
     dev: false
 
-  /next-themes@0.2.1(next@13.4.5)(react-dom@18.2.0)(react@18.2.0):
+  /next-themes@0.2.1(next@13.4.5)(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      next: 13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.1.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
     dev: false
 
-  /next@13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0):
+  /next@13.4.5(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-pfNsRLVM9e5Y1/z02VakJRfD6hMQkr24FaN2xc9GbcZDBxoOgiNAViSg5cXwlWCoMhtm4U315D7XYhgOr96Q3Q==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -7049,9 +7049,9 @@ packages:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001607
       postcss: 8.4.14
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.24.4)(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
+      styled-jsx: 5.1.1(@babel/core@7.24.4)(react@18.1.0)
       watchpack: 2.4.0
       zod: 3.21.4
     optionalDependencies:
@@ -8157,7 +8157,7 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-datocms@4.1.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.2.0):
+  /react-datocms@4.1.3(graphql@16.7.1)(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-60LfzlPbud7M9cDXzTaZy6sgCBHGWM/WEN4pZxlvnRRW74tOAAKjSgcGIJ5WIC/I+iiXvHp//75TQg0Y7+ozZQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -8166,27 +8166,27 @@ packages:
       datocms-listen: 0.1.15(graphql@16.7.1)
       datocms-structured-text-generic-html-renderer: 2.1.12
       datocms-structured-text-utils: 2.0.4
-      react: 18.2.0
-      react-intersection-observer: 9.8.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.1.0
+      react-intersection-observer: 9.8.1(react-dom@18.2.0)(react@18.1.0)
       react-string-replace: 1.1.1
       universal-base64: 2.1.0
-      use-deep-compare-effect: 1.8.1(react@18.2.0)
+      use-deep-compare-effect: 1.8.1(react@18.1.0)
     transitivePeerDependencies:
       - graphql
       - react-dom
     dev: false
 
-  /react-dom@18.2.0(react@18.2.0):
+  /react-dom@18.2.0(react@18.1.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
+      react: 18.1.0
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next@13.0.3(i18next@23.4.1)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@13.0.3(i18next@23.4.1)(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-/t4kt4Y2o+21hbvx+o9zpVnmoiud7KLDncyZFGN0U6TGAWYaXdTsp/ytAHFcKKSAODg4noIMaOO3X7bMgCqLHw==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -8202,11 +8202,11 @@ packages:
       '@babel/runtime': 7.24.4
       html-parse-stringify: 3.0.1
       i18next: 23.4.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
     dev: false
 
-  /react-intersection-observer@9.8.1(react-dom@18.2.0)(react@18.2.0):
+  /react-intersection-observer@9.8.1(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-QzOFdROX8D8MH3wE3OVKH0f3mLjKTtEN1VX/rkNuECCff+aKky0pIjulDhr3Ewqj5el/L+MhBkM3ef0Tbt+qUQ==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
@@ -8215,8 +8215,8 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
     dev: false
 
   /react-is@16.13.1:
@@ -8227,7 +8227,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-markdown@8.0.7(@types/react@18.0.34)(react@18.2.0):
+  /react-markdown@8.0.7(@types/react@18.0.34)(react@18.1.0):
     resolution: {integrity: sha512-bvWbzG4MtOU62XqBx3Xx+zB2raaFFsq4mYiAzfjXJMEz2sixgeAfraA3tvzULF02ZdOMUOKTBFFaZJDDrq+BJQ==}
     peerDependencies:
       '@types/react': '>=16'
@@ -8241,7 +8241,7 @@ packages:
       hast-util-whitespace: 2.0.1
       prop-types: 15.8.1
       property-information: 6.5.0
-      react: 18.2.0
+      react: 18.1.0
       react-is: 18.2.0
       remark-parse: 10.0.2
       remark-rehype: 10.1.0
@@ -8254,7 +8254,7 @@ packages:
       - supports-color
     dev: false
 
-  /react-modal-video@2.0.0(@babel/core@7.24.4)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.34.1)(react-dom@18.2.0)(react@18.2.0):
+  /react-modal-video@2.0.0(@babel/core@7.24.4)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.34.1)(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-KvR6XYH36t5W5J4EvLjWdoJYboghVA0VZbfMhLN3NnAHt8O95kokoS0mAwlhE5HrDHvW+20OtPc+Zhk9uufvWw==}
     peerDependencies:
       react: ^17.0.0 || ^18.2.0
@@ -8273,9 +8273,9 @@ packages:
       npm-run-all: 4.1.5
       onchange: 7.1.0
       power-assert: 1.6.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
+      react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.1.0)
       sass: 1.74.1
       stringify: 5.2.0
       uglify-js: 3.17.4
@@ -8301,7 +8301,7 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: false
 
-  /react-syntax-highlighter@15.5.0(react@18.2.0):
+  /react-syntax-highlighter@15.5.0(react@18.1.0):
     resolution: {integrity: sha512-+zq2myprEnQmH5yw6Gqc8lD55QHnpKaU8TOcFeC/Lg/MQSs8UknEA0JC4nTZGFAXC2J2Hyj/ijJ7NlabyPi2gg==}
     peerDependencies:
       react: '>= 0.14.0'
@@ -8310,11 +8310,11 @@ packages:
       highlight.js: 10.7.3
       lowlight: 1.20.0
       prismjs: 1.29.0
-      react: 18.2.0
+      react: 18.1.0
       refractor: 3.6.0
     dev: false
 
-  /react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0):
+  /react-transition-group@4.4.5(react-dom@18.2.0)(react@18.1.0):
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
       react: '>=16.6.0'
@@ -8324,12 +8324,12 @@ packages:
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.1.0
+      react-dom: 18.2.0(react@18.1.0)
     dev: false
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@18.1.0:
+    resolution: {integrity: sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
@@ -9273,7 +9273,7 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /styled-jsx@5.1.1(@babel/core@7.24.4)(react@18.2.0):
+  /styled-jsx@5.1.1(@babel/core@7.24.4)(react@18.1.0):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
     peerDependencies:
@@ -9288,7 +9288,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.4
       client-only: 0.0.1
-      react: 18.2.0
+      react: 18.1.0
     dev: false
 
   /subarg@1.0.0:
@@ -9890,7 +9890,7 @@ packages:
     resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
     dev: true
 
-  /use-deep-compare-effect@1.8.1(react@18.2.0):
+  /use-deep-compare-effect@1.8.1(react@18.1.0):
     resolution: {integrity: sha512-kbeNVZ9Zkc0RFGpfMN3MNfaKNvcLNyxOAAd9O4CBZ+kCBXXscn9s/4I+8ytUER4RDpEYs5+O6Rs4PqiZ+rHr5Q==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
@@ -9898,7 +9898,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.4
       dequal: 2.0.3
-      react: 18.2.0
+      react: 18.1.0
     dev: false
 
   /util-deprecate@1.0.2:
