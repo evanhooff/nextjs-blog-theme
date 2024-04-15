@@ -95,7 +95,7 @@ const Header = ({ lng, data }: Props) => {
         />
       )}
       <header
-        className={`header left-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header left-0 z-40 flex w-full items-center bg-white ${
           sticky
             ? 'fixed top-0 z-50 bg-white bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
             : `absolute ${notificationStrip ? 'top-10' : 'top-0'}`
@@ -122,7 +122,7 @@ const Header = ({ lng, data }: Props) => {
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
-              <div>
+              <div className="flex w-full justify-end">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"

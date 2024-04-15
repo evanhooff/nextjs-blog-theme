@@ -12,7 +12,7 @@ type Props = {
 
 const SplitImage = ({ heroTitle, heroSubtitle, buttons, image }: Props) => {
   return (
-    <div className="relative mt-24 flex flex-col-reverse py-16 lg:flex-col lg:pb-0 lg:pt-0">
+    <div className="relative mt-24 flex flex-col-reverse py-16 lg:flex-col lg:pb-0 lg:pt-0 ">
       <div className="inset-y-0 right-0 top-0 z-0 mx-auto w-full max-w-xl px-4 md:px-0 lg:absolute lg:mx-0 lg:mb-0 lg:w-7/12 lg:max-w-full lg:pr-0 xl:px-0">
         <svg
           className="absolute left-0 z-50 hidden h-full -translate-x-1/2 transform text-white lg:block"
@@ -41,21 +41,21 @@ const SplitImage = ({ heroTitle, heroSubtitle, buttons, image }: Props) => {
             <ReactMarkdown>{heroSubtitle || ''}</ReactMarkdown>
           </div>
           <div className="flex items-center">
-            {buttons.map((button) => {
-              const primary =
-                'hover:bg-primary/90 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded bg-primary px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none';
-              const secondary =
-                'hover:text-deep-purple-accent-700 inline-flex items-center font-semibold text-gray-800 transition-colors duration-200';
-              return (
-                <a
-                  key={button.id}
-                  href={button.url || '#'}
-                  className={button.primary ? primary : secondary}
-                >
-                  {button.label}
-                </a>
-              );
-            })}
+          {buttons.map((button) => {
+                const primary =
+                  'inline-block rounded-lg bg-primary/90 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base';
+                const secondary =
+                  'inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base';
+                return (
+                  <a
+                    key={button.id}
+                    href={button.url || '#'}
+                    className={button.primary ? primary : secondary}
+                  >
+                    {button.label}
+                  </a>
+                );
+              })}
           </div>
         </div>
       </div>

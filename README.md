@@ -94,3 +94,7 @@ Trusted by over 25,000 enterprise businesses, agency partners, and individuals a
 
 Or see [all our public repos](https://github.com/orgs/datocms/repositories?q=&type=public&language=&sort=stargazers)
 <!--datocms-autoinclude-footer end-->
+
+**KNOWN ISSUES**
+- check the typescript packages
+- set the correct caching for development/production

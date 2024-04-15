@@ -35,11 +35,31 @@ module.exports = {
         current: 'currentColor',
         transparent: 'transparent',
         white: '#FFFFFF',
+        light: "#f6fbfe",
         black: '#090E34',
         dark: '#1D2144',
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
-        yellow: '#FBB040',
+        yellow: '#FFCB00',
         'body-color': '#959CB1',
+        orange: "#FD7800",
+        red: {
+          DEFAULT: "#FF3451",
+          dark: "#5C0012"
+        },
+        teal: "#2f9d77",
+        green: {
+          DEFAULT: "#1DB14B",
+          dark: "#00411C"
+        },
+        blue: {
+          light: "#1094c6",
+          DEFAULT: "#0077CC",
+          dark: "#374491"
+        },
+        purple: {
+          DEFAULT: "#865387",
+          dark: "#250024"
+        }
       },
       boxShadow: {
         signUp: '0px 5px 10px rgba(4, 10, 34, 0.2)',
