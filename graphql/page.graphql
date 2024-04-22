@@ -21,11 +21,18 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
           }
         }
       }
+
+      ... on RecruiteeWidgetRecord {
+        _modelApiKey
+        id
+        jobsHeader
+      }
+
       ... on ChangelogSectionRecord {
         id
         _modelApiKey
         subtitle
-        title
+        changelogTitle
         featuredVersions {
           timeOfRelease
           versionName
@@ -37,7 +44,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
       ... on StatsSectionRecord {
         _modelApiKey
         id
-        title
+        statsTitle
         subtitle
         statistic {
           id
@@ -52,7 +59,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
         _modelApiKey
         id
         displayOptions
-        title
+        teamTitle
         subtitle
         showcasedMembers {
           name
@@ -71,7 +78,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
         _modelApiKey
         displayOptions
         id
-        title
+        faqTitle
         subtitle
         questions {
           question

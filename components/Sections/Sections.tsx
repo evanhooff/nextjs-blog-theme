@@ -57,6 +57,7 @@ import MinimalCardsFeature from '../Home/Features/MinimalCardsFeature';
 import BigImageHorizontalFeatures from '../Home/Features/BigImageHorizontalFeatures';
 import BigImageVerticalFeatures from '../Home/Features/BigImageVerticalFeatures';
 import Changelog from '../Changelog';
+import Jobs from '../Jobs/Jobs';
 
 type Props = {
   sections: Array<PageModelSectionsField>;
@@ -423,6 +424,13 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             const allPostsSectionRecord = section as AllPostsSectionRecord;
             return (
               <PostGridRenderer data={posts} lng={locale} postMeta={postMeta} />
+            );
+          case 'recruitee_widget': 
+            return (
+              <>
+                <h1>Test</h1>
+                <Jobs />
+              </>
             );
           case 'redirect_section':
             const redirectSectionRecord = section as RedirectSectionRecord;

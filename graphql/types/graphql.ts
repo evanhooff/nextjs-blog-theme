@@ -3965,6 +3965,32 @@ export type RecordInterface_SeoMetaTagsArgs = {
   locale?: InputMaybe<SiteLocale>;
 };
 
+/** Block of type Recruitee_widget (recruitee_widget) */
+export type RecruiteeWidgetRecord = RecordInterface & {
+  __typename?: 'RecruiteeWidgetRecord';
+  _createdAt: Scalars['DateTime']['output'];
+  /** Editing URL */
+  _editingUrl?: Maybe<Scalars['String']['output']>;
+  _firstPublishedAt?: Maybe<Scalars['DateTime']['output']>;
+  _isValid: Scalars['BooleanType']['output'];
+  _modelApiKey: Scalars['String']['output'];
+  _publicationScheduledAt?: Maybe<Scalars['DateTime']['output']>;
+  _publishedAt?: Maybe<Scalars['DateTime']['output']>;
+  /** Generates SEO and Social card meta tags to be used in your frontend */
+  _seoMetaTags: Array<Tag>;
+  _status: ItemStatus;
+  _unpublishingScheduledAt?: Maybe<Scalars['DateTime']['output']>;
+  _updatedAt: Scalars['DateTime']['output'];
+  id: Scalars['ItemId']['output'];
+  jobsHeader?: Maybe<Scalars['String']['output']>;
+};
+
+
+/** Block of type Recruitee_widget (recruitee_widget) */
+export type RecruiteeWidgetRecord_SeoMetaTagsArgs = {
+  locale?: InputMaybe<SiteLocale>;
+};
+
 /** Block of type 🔄 Redirect Section (redirect_section) */
 export type RedirectSectionRecord = RecordInterface & {
   __typename?: 'RedirectSectionRecord';

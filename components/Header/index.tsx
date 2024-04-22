@@ -201,9 +201,9 @@ const Header = ({ lng, data }: Props) => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <LanguageSelector lng={lng} languages={data._site.locales} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
