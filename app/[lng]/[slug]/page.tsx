@@ -32,6 +32,7 @@ export default async function Home({ params: { lng, slug } }: Params) {
     },
     isEnabled
   );
+  console.log(data?.page?.sections)
 
   if (!data.page) notFound();
 

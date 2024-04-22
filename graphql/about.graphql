@@ -34,7 +34,7 @@ query About($locale: SiteLocale, $fallbackLocale: [SiteLocale!]) {
       ... on StatsSectionRecord {
         _modelApiKey
         id
-        title
+        statsTitle
         subtitle
         statistic {
           id
@@ -49,7 +49,7 @@ query About($locale: SiteLocale, $fallbackLocale: [SiteLocale!]) {
         _modelApiKey
         id
         displayOptions
-        title
+        teamTitle
         subtitle
         showcasedMembers {
           name
@@ -78,7 +78,7 @@ query About($locale: SiteLocale, $fallbackLocale: [SiteLocale!]) {
         _modelApiKey
         displayOptions
         id
-        title
+        faqTitle
         subtitle
         questions {
           question
