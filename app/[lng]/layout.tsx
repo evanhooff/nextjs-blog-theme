@@ -7,7 +7,7 @@ import getAvailableLocales from '@/app/i18n/settings';
 import CustomColor from '@/components/Common/CustomColor';
 // import queryDatoCMS from '@/utils/queryDatoCMS';
 import queryDatoCMS from "./../../utils/queryDatoCMS"
-
+import Jobs from '@/components/Jobs/Jobs';
 type Params = {
   children: React.ReactNode;
   params: {
@@ -28,7 +28,6 @@ export default async function RootLayout({
 }: Params) {
   const { isEnabled } = draftMode();
   const data = await queryDatoCMS(CustomColorDocument, {}, isEnabled);
-  console.log('data', data)
 
   return (
     <>
@@ -37,6 +36,7 @@ export default async function RootLayout({
         g={data.layout?.mainColor.green || 247}
         b={data.layout?.mainColor.blue || 108}
       />
+      <Jobs />
       {children}
       <ScrollToTop lng={lng} isDraft={isEnabled} />
     </>
