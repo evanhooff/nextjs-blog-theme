@@ -36,13 +36,16 @@ const StatsSection = ({ title, subtitle, statistic }: Props) => {
             return (
               <div key={stat.id} className="w-4/5 p-4 text-white md:w-1/4">
                 <div className="flex flex-col items-center justify-center rounded-lg border-2 border-white px-4 py-6 text-center text-light">
-                  <div className="mb-4 h-24 w-24 text-white">
+                  {/* <div className="mb-4 h-24 w-24 text-white">
                     <SvgRenderer url={stat.icon.url} />
+                  </div> */}
+                  <div className="w-full pb-3 flex justify-between items-baseline border-b-2 border-b-[#409bd1]">
+                    <h2 className="title-font text-3xl font-medium text-light">
+                      {formatNumber(stat.quantity)}+
+                    </h2>
+                    <span className="leading-relaxed text-light">{stat.label}</span>
                   </div>
-                  <h2 className="title-font mt-8 text-3xl font-medium text-light">
-                    {formatNumber(stat.quantity)}
-                  </h2>
-                  <p className="leading-relaxed text-light">{stat.label}</p>
+                  <p className="leading-relaxed text-light mt-4">{stat.statsDescription}</p>
                 </div>
               </div>
             );

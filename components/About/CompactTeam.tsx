@@ -12,6 +12,7 @@ type Props = {
 };
 
 const CompactTeam = ({ header, subheader, members, lng }: Props) => {
+  console.log(header)
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6 py-10">
@@ -23,13 +24,13 @@ const CompactTeam = ({ header, subheader, members, lng }: Props) => {
           <ReactMarkdown>{subheader || ''}</ReactMarkdown>
         </div>
 
-        <div className="mt-8 flex">
+        <div className="mt-8 flex  flex-wrap">
           {members.map((member) => {
             return (
               <Link
                 href={`/${lng}/posts/author/${member.slug}`}
                 key={member.id}
-                className="group flex transform flex-col items-center rounded-full transition-colors duration-300 hover:bg-primary/90"
+                className="group m-8 flex transform flex-col items-center rounded-full transition-colors duration-300 hover:bg-primary/90"
               >
                 <div className="relative h-32 w-32 overflow-hidden rounded-full object-cover ring-4 ring-gray-300">
                   <DatoImage

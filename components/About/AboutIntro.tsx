@@ -148,7 +148,7 @@ const AboutIntro = ({
                 }),
                 renderNodeRule(isParagraph, ({ children, key }) => {
                   return (
-                    <div className="mb-4 text-sm text-body-color" key={key}>
+                    <div className="mb-4 text-dark" key={key}>
                       {children}
                     </div>
                   );

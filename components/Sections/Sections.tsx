@@ -26,6 +26,7 @@ import {
   PageModelSectionsField,
   PostRecord,
   PricingSectionRecord,
+  RecruiteeWidgetRecord,
   RedirectSectionRecord,
   ReviewSectionRecord,
   SiteLocale,
@@ -75,7 +76,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             const changeLogSection = section as ChangelogSectionRecord;
             return (
               <Changelog
-                title={changeLogSection.title}
+                title={changeLogSection.changelogTitle}
                 subtitle={changeLogSection.subtitle}
                 featuredChangeLogs={changeLogSection.featuredVersions}
                 locale={locale}
@@ -369,7 +370,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             if (teamSectionRecord.displayOptions === 'compact')
               return (
                 <CompactTeam
-                  header={teamSectionRecord.title}
+                  header={teamSectionRecord.teamTitle}
                   subheader={teamSectionRecord.subtitle}
                   members={teamSectionRecord.showcasedMembers}
                   lng={locale}
@@ -377,7 +378,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
               );
             return (
               <ExpandedTeam
-                header={teamSectionRecord.title}
+                header={teamSectionRecord.teamTitle}
                 subheader={teamSectionRecord.subtitle}
                 members={teamSectionRecord.showcasedMembers}
                 lng={locale}
@@ -388,14 +389,14 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             if (faqSectionRecord.displayOptions === 'accordion')
               return (
                 <FAQAccordion
-                  title={faqSectionRecord.title}
+                  title={faqSectionRecord.faqTitle}
                   subtitle={faqSectionRecord.subtitle}
                   questions={faqSectionRecord.questions}
                 />
               );
             return (
               <FAQGrid
-                title={faqSectionRecord.title}
+                title={faqSectionRecord.faqTitle}
                 subtitle={faqSectionRecord.subtitle}
                 questions={faqSectionRecord.questions}
               />
@@ -404,7 +405,7 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             const statsSectionRecord = section as StatsSectionRecord;
             return (
               <StatsSection
-                title={statsSectionRecord.title}
+                title={statsSectionRecord.statsTitle}
                 subtitle={statsSectionRecord.subtitle}
                 statistic={statsSectionRecord.statistic}
               />
@@ -426,10 +427,11 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
               <PostGridRenderer data={posts} lng={locale} postMeta={postMeta} />
             );
           case 'recruitee_widget': 
+            const recruiteeWidgetRecord = section as RecruiteeWidgetRecord;
+            console.log(recruiteeWidgetRecord)
             return (
               <>
-                <h1>Test</h1>
-                <Jobs />
+                <Jobs header={recruiteeWidgetRecord.jobsHeader} />
               </>
             );
           case 'redirect_section':

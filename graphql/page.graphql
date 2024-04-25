@@ -53,6 +53,7 @@ query Page($locale: SiteLocale, $fallbackLocale: [SiteLocale!], $slug: String) {
           icon {
             url
           }
+          statsDescription
         }
       }
       ... on TeamSectionRecord {

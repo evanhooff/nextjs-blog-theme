@@ -43,6 +43,7 @@ query About($locale: SiteLocale, $fallbackLocale: [SiteLocale!]) {
           icon {
             url
           }
+          statsDescription
         }
       }
       ... on TeamSectionRecord {
