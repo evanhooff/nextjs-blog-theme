@@ -9,7 +9,6 @@ type Props = {
   header: Maybe<string>;
 };
 export default function Jobs({header}: Props) {
-  console.log(header)
     return (
       <div className="mx-auto mt-16 px-4 py-12 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
         {header && <h2 className="mx-6 lg:mx-40 text-center mb-8 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl">

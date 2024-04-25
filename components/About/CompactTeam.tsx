@@ -12,7 +12,6 @@ type Props = {
 };
 
 const CompactTeam = ({ header, subheader, members, lng }: Props) => {
-  console.log(header)
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6 py-10">

@@ -18,7 +18,7 @@ type Params = {
     slug: string;
   };
 };
-
+export const dynamic = 'force-dynamic';
 export default async function Home({ params: { lng, slug } }: Params) {
   const fallbackLng = await getFallbackLocale();
   const { isEnabled } = draftMode();

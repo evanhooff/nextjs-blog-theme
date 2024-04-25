@@ -428,7 +428,6 @@ export default function Section({ sections, locale, posts, postMeta }: Props) {
             );
           case 'recruitee_widget': 
             const recruiteeWidgetRecord = section as RecruiteeWidgetRecord;
-            console.log(recruiteeWidgetRecord)
             return (
               <>
                 <Jobs header={recruiteeWidgetRecord.jobsHeader} />
